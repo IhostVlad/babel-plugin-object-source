@@ -1,0 +1,24 @@
+{
+  "name": "babel-plugin-object-source",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description":
+    "Babel plugin for verbose any object creation stack, file and line expansion for development purposes",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IhostVlad/babel-plugin-object-source.git"
+  },
+  "engines": {
+    "node": ">= 7.0.0"
+  },
+  "license": "MIT",
+  "keywords": [
+    "babel",
+    "babel-plugin",
+    "development",
+    "metainformation",
+    "plugin",
+    "reflection",
+    "webpack"
+  ]
+}
