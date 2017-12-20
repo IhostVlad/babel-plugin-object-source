@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-object-source",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "description": "Babel plugin for verbose any object creation stack, file and line expansion for development purposes",
   "scripts": {
