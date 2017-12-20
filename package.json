@@ -2,8 +2,11 @@
   "name": "babel-plugin-object-source",
   "version": "1.0.0",
   "main": "index.js",
-  "description":
-    "Babel plugin for verbose any object creation stack, file and line expansion for development purposes",
+  "description": "Babel plugin for verbose any object creation stack, file and line expansion for development purposes",
+  "scripts": {
+    "start": "echo \"Use plugin with babel or webpack \" && exit 1",
+    "test": "jest"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/IhostVlad/babel-plugin-object-source.git"
@@ -20,5 +23,9 @@
     "plugin",
     "reflection",
     "webpack"
-  ]
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "jest": "^22.0.3"
+  }
 }

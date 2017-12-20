@@ -1,0 +1,403 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Babel-plugin-object-source should work fine 1`] = `
+"\\"use strict\\";
+
+exports.__esModule = true;
+
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];
+    for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }
+  return target;
+};
+
+var _react = require(\\"react\\");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _redux = require(\\"redux\\");
+
+var _resolveStorageLite = require(\\"resolve-storage-lite\\");
+
+var _resolveStorageLite2 = _interopRequireDefault(_resolveStorageLite);
+
+var _resolveBusMemory = require(\\"resolve-bus-memory\\");
+
+var _resolveBusMemory2 = _interopRequireDefault(_resolveBusMemory);
+
+var _RESOLVE_SERVER_CONFIG = require(\\"RESOLVE_SERVER_CONFIG\\");
+
+var _RESOLVE_SERVER_CONFIG2 = _interopRequireDefault(_RESOLVE_SERVER_CONFIG);
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : false ? false : function __WRAP_OBJECT_CREATION_WITH_SOURCE_MAP__(inputObject, pathInfo) {
+    try {
+      Object.defineProperty(inputObject, \\"__SOURCE_DELCARATION__\\", {
+        value: pathInfo
+      });
+    } catch (err) {}
+
+    return inputObject;
+  }({ default: obj }, {
+    sourceCode: \\"{ default: obj }\\",
+    filename: \\"./gauge-code.js\\",
+    startLine: 38,
+    startColumn: 39,
+    endLine: 38,
+    endColumn: 55
+  });
+}
+
+var emptyRootComponent = function emptyRootComponent() {
+  return _react2.default.createElement(\\"div\\", null, \\"No root component provided! Please set it in resolve.server.config.js\\");
+};
+var emptyCreateStore = function emptyCreateStore() {
+  return (0, _redux.createStore)(function () {
+    return false ? false : function __WRAP_OBJECT_CREATION_WITH_SOURCE_MAP__(inputObject, pathInfo) {
+      try {
+        Object.defineProperty(inputObject, \\"__SOURCE_DELCARATION__\\", {
+          value: pathInfo
+        });
+      } catch (err) {}
+
+      return inputObject;
+    }({}, {
+      sourceCode: \\"{}\\",
+      filename: \\"./gauge-code.js\\",
+      startLine: 50,
+      startColumn: 11,
+      endLine: 50,
+      endColumn: 13
+    });
+  }, false ? false : function __WRAP_OBJECT_CREATION_WITH_SOURCE_MAP__(inputObject, pathInfo) {
+    try {
+      Object.defineProperty(inputObject, \\"__SOURCE_DELCARATION__\\", {
+        value: pathInfo
+      });
+    } catch (err) {}
+
+    return inputObject;
+  }({}, {
+    sourceCode: \\"{}\\",
+    filename: \\"./gauge-code.js\\",
+    startLine: 51,
+    startColumn: 5,
+    endLine: 51,
+    endColumn: 7
+  }));
+};
+
+var defaultConfig = false ? false : function __WRAP_OBJECT_CREATION_WITH_SOURCE_MAP__(inputObject, pathInfo) {
+  try {
+    Object.defineProperty(inputObject, \\"__SOURCE_DELCARATION__\\", {
+      value: pathInfo
+    });
+  } catch (err) {}
+
+  return inputObject;
+}({
+  entries: false ? false : function __WRAP_OBJECT_CREATION_WITH_SOURCE_MAP__(inputObject, pathInfo) {
+    try {
+      Object.defineProperty(inputObject, \\"__SOURCE_DELCARATION__\\", {
+        value: pathInfo
+      });
+    } catch (err) {}
+
+    return inputObject;
+  }({
+    rootComponent: emptyRootComponent,
+    createStore: emptyCreateStore
+  }, {
+    sourceCode: \\"{\\\\n    rootComponent: emptyRootComponent,\\\\n    createStore: emptyCreateStore\\\\n  }\\",
+    filename: \\"./gauge-code.js\\",
+    startLine: 55,
+    startColumn: 11,
+    endLine: 58,
+    endColumn: 3
+  }),
+  bus: false ? false : function __WRAP_OBJECT_CREATION_WITH_SOURCE_MAP__(inputObject, pathInfo) {
+    try {
+      Object.defineProperty(inputObject, \\"__SOURCE_DELCARATION__\\", {
+        value: pathInfo
+      });
+    } catch (err) {}
+
+    return inputObject;
+  }({
+    adapter: _resolveBusMemory2.default
+  }, {
+    sourceCode: \\"{\\\\n    adapter: _resolveBusMemory2.default\\\\n  }\\",
+    filename: \\"./gauge-code.js\\",
+    startLine: 59,
+    startColumn: 7,
+    endLine: 61,
+    endColumn: 3
+  }),
+  storage: false ? false : function __WRAP_OBJECT_CREATION_WITH_SOURCE_MAP__(inputObject, pathInfo) {
+    try {
+      Object.defineProperty(inputObject, \\"__SOURCE_DELCARATION__\\", {
+        value: pathInfo
+      });
+    } catch (err) {}
+
+    return inputObject;
+  }({
+    adapter: _resolveStorageLite2.default
+  }, {
+    sourceCode: \\"{\\\\n    adapter: _resolveStorageLite2.default\\\\n  }\\",
+    filename: \\"./gauge-code.js\\",
+    startLine: 62,
+    startColumn: 11,
+    endLine: 64,
+    endColumn: 3
+  }),
+  initialState: function initialState() {
+    return Promise.resolve(false ? false : function __WRAP_OBJECT_CREATION_WITH_SOURCE_MAP__(inputObject, pathInfo) {
+      try {
+        Object.defineProperty(inputObject, \\"__SOURCE_DELCARATION__\\", {
+          value: pathInfo
+        });
+      } catch (err) {}
+
+      return inputObject;
+    }({}, {
+      sourceCode: \\"{}\\",
+      filename: \\"./gauge-code.js\\",
+      startLine: 66,
+      startColumn: 27,
+      endLine: 66,
+      endColumn: 29
+    }));
+  },
+  aggregates: false ? false : function __WRAP_OBJECT_CREATION_WITH_SOURCE_MAP__(inputObject, pathInfo) {
+    try {
+      Object.defineProperty(inputObject, \\"__SOURCE_DELCARATION__\\", {
+        value: pathInfo
+      });
+    } catch (err) {}
+
+    return inputObject;
+  }([], {
+    sourceCode: \\"[]\\",
+    filename: \\"./gauge-code.js\\",
+    startLine: 68,
+    startColumn: 14,
+    endLine: 68,
+    endColumn: 16
+  }),
+  initialSubscribedEvents: false ? false : function __WRAP_OBJECT_CREATION_WITH_SOURCE_MAP__(inputObject, pathInfo) {
+    try {
+      Object.defineProperty(inputObject, \\"__SOURCE_DELCARATION__\\", {
+        value: pathInfo
+      });
+    } catch (err) {}
+
+    return inputObject;
+  }({ types: false ? false : function __WRAP_OBJECT_CREATION_WITH_SOURCE_MAP__(inputObject, pathInfo) {
+      try {
+        Object.defineProperty(inputObject, \\"__SOURCE_DELCARATION__\\", {
+          value: pathInfo
+        });
+      } catch (err) {}
+
+      return inputObject;
+    }([], {
+      sourceCode: \\"[]\\",
+      filename: \\"./gauge-code.js\\",
+      startLine: 69,
+      startColumn: 36,
+      endLine: 69,
+      endColumn: 38
+    }), ids: false ? false : function __WRAP_OBJECT_CREATION_WITH_SOURCE_MAP__(inputObject, pathInfo) {
+      try {
+        Object.defineProperty(inputObject, \\"__SOURCE_DELCARATION__\\", {
+          value: pathInfo
+        });
+      } catch (err) {}
+
+      return inputObject;
+    }([], {
+      sourceCode: \\"[]\\",
+      filename: \\"./gauge-code.js\\",
+      startLine: 69,
+      startColumn: 45,
+      endLine: 69,
+      endColumn: 47
+    }) }, {
+    sourceCode: \\"{ types: [], ids: [] }\\",
+    filename: \\"./gauge-code.js\\",
+    startLine: 69,
+    startColumn: 27,
+    endLine: 69,
+    endColumn: 49
+  }),
+  filterSubscription: function filterSubscription(eventDescription) {
+    return eventDescription;
+  },
+  jwt: false ? false : function __WRAP_OBJECT_CREATION_WITH_SOURCE_MAP__(inputObject, pathInfo) {
+    try {
+      Object.defineProperty(inputObject, \\"__SOURCE_DELCARATION__\\", {
+        value: pathInfo
+      });
+    } catch (err) {}
+
+    return inputObject;
+  }({
+    cookieName: \\"Jwt-Cookie\\",
+    options: false ? false : function __WRAP_OBJECT_CREATION_WITH_SOURCE_MAP__(inputObject, pathInfo) {
+      try {
+        Object.defineProperty(inputObject, \\"__SOURCE_DELCARATION__\\", {
+          value: pathInfo
+        });
+      } catch (err) {}
+
+      return inputObject;
+    }({ maxAge: 1000 * 60 * 5 }, {
+      sourceCode: \\"{ maxAge: 1000 * 60 * 5 }\\",
+      filename: \\"./gauge-code.js\\",
+      startLine: 75,
+      startColumn: 13,
+      endLine: 75,
+      endColumn: 38
+    }),
+    secret: \\"Keyboard-Kat\\"
+  }, {
+    sourceCode: \\"{\\\\n    cookieName: \\\\\\"Jwt-Cookie\\\\\\",\\\\n    options: { maxAge: 1000 * 60 * 5 },\\\\n    secret: \\\\\\"Keyboard-Kat\\\\\\"\\\\n  }\\",
+    filename: \\"./gauge-code.js\\",
+    startLine: 73,
+    startColumn: 7,
+    endLine: 77,
+    endColumn: 3
+  }),
+  auth: false ? false : function __WRAP_OBJECT_CREATION_WITH_SOURCE_MAP__(inputObject, pathInfo) {
+    try {
+      Object.defineProperty(inputObject, \\"__SOURCE_DELCARATION__\\", {
+        value: pathInfo
+      });
+    } catch (err) {}
+
+    return inputObject;
+  }({
+    strategies: false ? false : function __WRAP_OBJECT_CREATION_WITH_SOURCE_MAP__(inputObject, pathInfo) {
+      try {
+        Object.defineProperty(inputObject, \\"__SOURCE_DELCARATION__\\", {
+          value: pathInfo
+        });
+      } catch (err) {}
+
+      return inputObject;
+    }([], {
+      sourceCode: \\"[]\\",
+      filename: \\"./gauge-code.js\\",
+      startLine: 79,
+      startColumn: 16,
+      endLine: 79,
+      endColumn: 18
+    })
+  }, {
+    sourceCode: \\"{\\\\n    strategies: []\\\\n  }\\",
+    filename: \\"./gauge-code.js\\",
+    startLine: 78,
+    startColumn: 8,
+    endLine: 80,
+    endColumn: 3
+  }),
+  readModels: false ? false : function __WRAP_OBJECT_CREATION_WITH_SOURCE_MAP__(inputObject, pathInfo) {
+    try {
+      Object.defineProperty(inputObject, \\"__SOURCE_DELCARATION__\\", {
+        value: pathInfo
+      });
+    } catch (err) {}
+
+    return inputObject;
+  }([], {
+    sourceCode: \\"[]\\",
+    filename: \\"./gauge-code.js\\",
+    startLine: 81,
+    startColumn: 14,
+    endLine: 81,
+    endColumn: 16
+  }),
+  viewModels: false ? false : function __WRAP_OBJECT_CREATION_WITH_SOURCE_MAP__(inputObject, pathInfo) {
+    try {
+      Object.defineProperty(inputObject, \\"__SOURCE_DELCARATION__\\", {
+        value: pathInfo
+      });
+    } catch (err) {}
+
+    return inputObject;
+  }([], {
+    sourceCode: \\"[]\\",
+    filename: \\"./gauge-code.js\\",
+    startLine: 82,
+    startColumn: 14,
+    endLine: 82,
+    endColumn: 16
+  }),
+  extendExpress: null,
+  sagas: false ? false : function __WRAP_OBJECT_CREATION_WITH_SOURCE_MAP__(inputObject, pathInfo) {
+    try {
+      Object.defineProperty(inputObject, \\"__SOURCE_DELCARATION__\\", {
+        value: pathInfo
+      });
+    } catch (err) {}
+
+    return inputObject;
+  }([], {
+    sourceCode: \\"[]\\",
+    filename: \\"./gauge-code.js\\",
+    startLine: 84,
+    startColumn: 9,
+    endLine: 84,
+    endColumn: 11
+  })
+}, {
+  sourceCode: \\"{\\\\n  entries: {\\\\n    rootComponent: emptyRootComponent,\\\\n    createStore: emptyCreateStore\\\\n  },\\\\n  bus: {\\\\n    adapter: _resolveBusMemory2.default\\\\n  },\\\\n  storage: {\\\\n    adapter: _resolveStorageLite2.default\\\\n  },\\\\n  initialState: function initialState() {\\\\n    return Promise.resolve({});\\\\n  },\\\\n  aggregates: [],\\\\n  initialSubscribedEvents: { types: [], ids: [] },\\\\n  filterSubscription: function filterSubscription(eventDescription) {\\\\n    return eventDescription;\\\\n  },\\\\n  jwt: {\\\\n    cookieName: \\\\\\"Jwt-Cookie\\\\\\",\\\\n    options: { maxAge: 1000 * 60 * 5 },\\\\n    secret: \\\\\\"Keyboard-Kat\\\\\\"\\\\n  },\\\\n  auth: {\\\\n    strategies: []\\\\n  },\\\\n  readModels: [],\\\\n  viewModels: [],\\\\n  extendExpress: null,\\\\n  sagas: []\\\\n}\\",
+  filename: \\"./gauge-code.js\\",
+  startLine: 54,
+  startColumn: 20,
+  endLine: 85,
+  endColumn: 1
+});
+
+function extendConfig(inputConfig, defaultConfig) {
+  var config = _extends(false ? false : function __WRAP_OBJECT_CREATION_WITH_SOURCE_MAP__(inputObject, pathInfo) {
+    try {
+      Object.defineProperty(inputObject, \\"__SOURCE_DELCARATION__\\", {
+        value: pathInfo
+      });
+    } catch (err) {}
+
+    return inputObject;
+  }({}, {
+    sourceCode: \\"{}\\",
+    filename: \\"./gauge-code.js\\",
+    startLine: 88,
+    startColumn: 24,
+    endLine: 88,
+    endColumn: 26
+  }), inputConfig);
+
+  Object.keys(defaultConfig).forEach(function (key) {
+    if (!config[key]) {
+      config[key] = defaultConfig[key];
+    } else if (defaultConfig[key] !== null && defaultConfig[key].constructor === Object) {
+      Object.keys(defaultConfig[key]).forEach(function (innerKey) {
+        if (!config[key][innerKey]) {
+          config[key][innerKey] = defaultConfig[key][innerKey];
+        }
+      });
+    }
+  });
+
+  return config;
+}
+
+exports.default = extendConfig(_RESOLVE_SERVER_CONFIG2.default, defaultConfig);"
+`;

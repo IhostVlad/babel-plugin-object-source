@@ -1,25 +1,33 @@
-module.exports = function({ types: t }) {
-  const WRAP_NAME = "__WRAP_OBJECT_CREATION_WITH_SOURCE_MAP__";
-  const SOURCE_NAME = "__SOURCE_DELCARATION__";
+"use strict";
+
+module.exports = function(_ref) {
+  var t = _ref.types;
+
+  var WRAP_NAME = "__WRAP_OBJECT_CREATION_WITH_SOURCE_MAP__";
+  var SOURCE_NAME = "__SOURCE_DELCARATION__";
   return {
     visitor: {
-      "ObjectExpression|ArrayExpression|NewExpression": function(path, state) {
-        const wrappedParent = path.findParent(
-          parent =>
+      "ObjectExpression|ArrayExpression|NewExpression": function ObjectExpressionArrayExpressionNewExpression(
+        path,
+        state
+      ) {
+        var wrappedParent = path.findParent(function(parent) {
+          return (
             parent.node &&
             parent.node.callee &&
             parent.node.callee.id &&
             parent.node.callee.id.name === WRAP_NAME
-        );
+          );
+        });
         if (wrappedParent) {
-          const skip =
+          var skip =
             wrappedParent.node.arguments.indexOf(path.node) > -1 ||
             wrappedParent.node.callee.body.body[0].block.body[0].expression
               .arguments[2] === path.node;
           if (skip) return;
         }
 
-        const sourceInfo = {
+        var sourceInfo = {
           sourceCode: "Source code is not available",
           filename: "Source file name not available",
           startLine: NaN,
@@ -71,7 +79,6 @@ module.exports = function({ types: t }) {
                     ]),
                     t.catchClause(t.identifier("err"), t.blockStatement([]))
                   ),
-
                   t.returnStatement(t.identifier("inputObject"))
                 ]),
                 false,
