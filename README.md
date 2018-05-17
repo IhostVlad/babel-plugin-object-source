@@ -65,3 +65,14 @@ if(isNotGood(config.value)) {
 }
 
 ```
+
+### Package testing
+
+Since plugin should work properly with `babel-core@^6.26.0` and `babel core@^7.0.0` versions, it should be included in integration tests.
+Hovewer, `npm` does not support existence of different versions of same package in `dependencies` or `devDependencies`.
+
+Unfontunely, there is no smart workaround for this: see [here](https://github.com/npm/npm/issues/5499#issuecomment-129481232)
+and [here](https://stackoverflow.com/questions/43770328/) for more details.
+
+That's why repository introduces fake `babelcore6-1.0.0.tgz` and `babelcore7-1.0.0.tgz` local packages.
+They does not include nothing, execpt dependency for `babel-core@^6.26.0` and `babel core@^7.0.0` packages respectively.
