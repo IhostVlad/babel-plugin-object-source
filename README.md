@@ -6,6 +6,8 @@ Plugin `babel-plugin-object-source` for `babel` allows to wrap any object in tra
 For every non-primitive value - Ecmascript object - hidden field `__SOURCE_DELCARATION__` will be attached, so in later use original file name & line number can be ealisy retrieved.  
 Plugin works with ES5-only AST tree, so must be included after any ES6+ and other babel transformation plugins. 
 
+Works with latest babel versions, including 6-th and 7-th branch. Tested on `babel-core@^6.26.0` and `@babel/core@7.0.0-beta.47`. Note that since 7-th version babel core package moved into dedicated org-namespace.
+
 ### Use case
 
 When develop library or boilerplate starter, like [react-scripts](https://www.npmjs.com/package/react-scripts) or [resolve-scripts](https://www.npmjs.com/package/resolve-scripts), there is common problem with reporting error to end user. 
@@ -65,14 +67,3 @@ if(isNotGood(config.value)) {
 }
 
 ```
-
-### Package testing
-
-Since plugin should work properly with `babel-core@^6.26.0` and `babel core@^7.0.0` versions, it should be included in integration tests.
-Hovewer, `npm` does not support existence of different versions of same package in `dependencies` or `devDependencies`.
-
-Unfontunely, there is no smart workaround for this: see [here](https://github.com/npm/npm/issues/5499#issuecomment-129481232)
-and [here](https://stackoverflow.com/questions/43770328/) for more details.
-
-That's why repository introduces fake `babelcore6-1.0.0.tgz` and `babelcore7-1.0.0.tgz` local packages.
-They does not include nothing, execpt dependency for `babel-core@^6.26.0` and `babel core@^7.0.0` packages respectively.
